@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear música | VoidRiff</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <nav class="nav-principal">
+            <a href="VDRF.html" class="logo">VoidRiff</a>
+            <div class="nav-links">
+                <a href="musicos.html">Músicos</a>
+                <a href="bandas.html">Bandas</a>
+                <a href="crear-banda.html">Crear banda</a>
+                <a href="subir-musica.html">Subir música</a>
+                <a href="aprender.html">Aprender</a>
+                <a href="login.html" class="btn-nav">Entrar</a>
+            </div>
+        </nav>
+    </header>
+
+        <main>
+        <section class="encabezado-pagina">
+            <h1>Crea música con otros</h1>
+            <p>Publica una idea, suma tu parte a un proyecto abierto o arma una pieza desde cero con músicos de la comunidad.</p>
+            <div class="hero-botones">
+                <a href="#nuevo-proyecto" class="btn">Iniciar un proyecto</a>
+                <a href="#proyectos" class="btn btn-ghost">Ver proyectos abiertos</a>
+            </div>
+        </section>
+
+        <section class="como-funciona">
+            <h2>Cómo se crea una canción aquí</h2>
+
+            <div class="lista-pasos">
+                <article class="paso">
+                    <span class="paso-numero">1</span>
+                    <h3>Inicia un proyecto</h3>
+                    <p>Cuenta tu idea: un riff, una letra, un ritmo o una canción a medias.</p>
+                </article>
+
+                <article class="paso">
+                    <span class="paso-numero">2</span>
+                    <h3>Pide colaboradores</h3>
+                    <p>Indica qué instrumentos te faltan y quién puede sumarse.</p>
+                </article>
+
+                <article class="paso">
+                    <span class="paso-numero">3</span>
+                    <h3>Construyan la pieza</h3>
+                    <p>Cada músico aporta su parte hasta tener una versión lista.</p>
+                </article>
+
+                <article class="paso">
+                    <span class="paso-numero">4</span>
+                    <h3>Compártela</h3>
+                    <p>Cuando esté terminada, <a href="subir-musica.html">súbela a VoidRiff</a>.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="proyectos-abiertos" id="proyectos">
+            <h2>Proyectos abiertos</h2>
+            <p class="contador-resultados">3 proyectos buscando colaboradores</p>
+
+            <div class="lista-proyectos">
+
+                <article class="proyecto">
+                    <div class="proyecto-cabecera">
+                        <h3>Noche de Tormenta</h3>
+                        <span class="estado">Abierto</span>
+                    </div>
+                    <p>Riff de guitarra listo y estructura de la canción. Falta toda la base rítmica.</p>
+                    <p class="ubicacion">Rock alternativo - Cali</p>
+
+                    <p class="busca-titulo">Buscan:</p>
+                    <div class="perfil-tags">
+                        <span class="tag">Bajista</span>
+                        <span class="tag">Baterista</span>
+                    </div>
+
+                    <a href="VDRF.html#contacto" class="btn">Unirme</a>
+                </article>
+
+                <article class="proyecto">
+                    <div class="proyecto-cabecera">
+                        <h3>Cenizas</h3>
+                        <span class="estado">Abierto</span>
+                    </div>
+                    <p>Letra y melodía vocal escritas. Necesito quien lleve la parte de guitarras pesadas.</p>
+                    <p class="ubicacion">Metal - Medellín</p>
+
+                    <p class="busca-titulo">Buscan:</p>
+                    <div class="perfil-tags">
+                        <span class="tag">Guitarrista</span>
+                    </div>
+
+                    <a href="VDRF.html#contacto" class="btn">Unirme</a>
+                </article>
+
+                <article class="proyecto">
+                    <div class="proyecto-cabecera">
+                        <h3>Groove de Domingo</h3>
+                        <span class="estado">Abierto</span>
+                    </div>
+                    <p>Línea de bajo y ritmo base. Busco teclados y voz para darle alma a la canción.</p>
+                    <p class="ubicacion">Funk y soul - Bogotá</p>
+
+                    <p class="busca-titulo">Buscan:</p>
+                    <div class="perfil-tags">
+                        <span class="tag">Tecladista</span>
+                        <span class="tag">Vocalista</span>
+                    </div>
+
+                    <a href="VDRF.html#contacto" class="btn">Unirme</a>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="contacto" id="nuevo-proyecto">
+            <h2>Inicia tu proyecto</h2>
+            <p>Cuéntanos tu idea y qué músicos necesitas para darle vida.</p>
+
+            <form class="form-contacto">
+
+                <div class="campo">
+                    <label for="nombre-proyecto">Nombre del proyecto</label>
+                    <input type="text" id="nombre-proyecto" name="nombre-proyecto" placeholder="Ej: Noche de Tormenta" required>
+                </div>
+
+                <div class="campo">
+                    <label for="genero">Género</label>
+                    <select id="genero" name="genero" required>
+                        <option value="">Selecciona un género</option>
+                        <option>Rock</option>
+                        <option>Metal</option>
+                        <option>Punk</option>
+                        <option>Jazz</option>
+                        <option>Funk</option>
+                        <option>Blues</option>
+                        <option>Alternativo</option>
+                        <option>Otro</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="punto">¿En qué punto está?</label>
+                    <select id="punto" name="punto" required>
+                        <option value="">Selecciona una opción</option>
+                        <option>Solo una idea</option>
+                        <option>Riff o melodía lista</option>
+                        <option>Letra escrita</option>
+                        <option>Canción casi terminada</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <fieldset>
+                        <legend>¿Qué músicos buscas?</legend>
+                        <div class="grupo-checks">
+                            <label class="check"><input type="checkbox" name="busca" value="guitarra"> Guitarrista</label>
+                            <label class="check"><input type="checkbox" name="busca" value="bajo"> Bajista</label>
+                            <label class="check"><input type="checkbox" name="busca" value="bateria"> Baterista</label>
+                            <label class="check"><input type="checkbox" name="busca" value="voz"> Vocalista</label>
+                            <label class="check"><input type="checkbox" name="busca" value="teclado"> Tecladista</label>
+                            <label class="check"><input type="checkbox" name="busca" value="otro"> Otro</label>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="campo">
+                    <label for="idea">Describe tu idea</label>
+                    <textarea id="idea" name="idea" rows="5" placeholder="Estilo, referencias, qué ya tienes hecho y qué te gustaría lograr..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Publicar proyecto</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-contenido">
+            <div class="footer-marca">
+                <p class="footer-logo">VoidRiff</p>
+                <p>Conecta con músicos y crea música sin límites.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Explora</h4>
+                <a href="musicos.html">Músicos</a>
+                <a href="bandas.html">Bandas</a>
+                <a href="aprender.html">Aprender</a>
+                <a href="VDRF.html#contacto">Contacto</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>Crea</h4>
+                <a href="crear-banda.html">Crear banda</a>
+                <a href="subir-musica.html">Subir música</a>
+                <a href="crear-musica.html">Crear música</a>
+            </div>
+
+            <div class="footer-redes">
+                <h4>Síguenos</h4>
+                <a href="#">Instagram</a>
+                <a href="#">YouTube</a>
+                <a href="#">Spotify</a>
+            </div>
+        </div>
+
+        <p class="footer-copy">&copy; 2026 VoidRiff. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

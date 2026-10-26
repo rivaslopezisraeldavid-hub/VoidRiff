@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subir música | VoidRiff</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <nav class="nav-principal">
+            <a href="VDRF.html" class="logo">VoidRiff</a>
+            <div class="nav-links">
+                <a href="musicos.html">Músicos</a>
+                <a href="bandas.html">Bandas</a>
+                <a href="crear-banda.html">Crear banda</a>
+                <a href="subir-musica.html">Subir música</a>
+                <a href="aprender.html">Aprender</a>
+                <a href="login.html" class="btn-nav">Entrar</a>
+            </div>
+        </nav>
+    </header>
+
+       <main>
+        <section class="encabezado-pagina">
+            <h1>Sube tu música</h1>
+            <p>Comparte un riff, una demo o una canción completa con la comunidad y encuentra músicos para terminarla.</p>
+        </section>
+
+        <section class="contacto">
+            <form class="form-contacto">
+
+                <div class="campo">
+                    <label for="titulo">Título</label>
+                    <input type="text" id="titulo" name="titulo" placeholder="Ej: Riff en Mi menor" required>
+                </div>
+
+                <div class="campo">
+                    <label for="tipo">Tipo</label>
+                    <select id="tipo" name="tipo" required>
+                        <option value="">Selecciona un tipo</option>
+                        <option>Riff</option>
+                        <option>Demo</option>
+                        <option>Canción completa</option>
+                        <option>Idea o loop</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="genero">Género</label>
+                    <select id="genero" name="genero" required>
+                        <option value="">Selecciona un género</option>
+                        <option>Rock</option>
+                        <option>Metal</option>
+                        <option>Punk</option>
+                        <option>Jazz</option>
+                        <option>Funk</option>
+                        <option>Blues</option>
+                        <option>Alternativo</option>
+                        <option>Otro</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="audio">Archivo de audio</label>
+                    <div class="zona-subida">
+                        <input type="file" id="audio" name="audio" accept="audio/*" required>
+                        <p class="campo-ayuda">Formatos MP3, WAV o similares.</p>
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label for="portada">Portada (opcional)</label>
+                    <div class="zona-subida">
+                        <input type="file" id="portada" name="portada" accept="image/*">
+                        <p class="campo-ayuda">Una imagen cuadrada se ve mejor.</p>
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label for="descripcion">Descripción</label>
+                    <textarea id="descripcion" name="descripcion" rows="4" placeholder="Cuenta de qué trata, con qué instrumentos la grabaste y qué te gustaría agregarle..."></textarea>
+                </div>
+
+                <div class="campo">
+                    <label for="visibilidad">¿Quién puede escucharla?</label>
+                    <select id="visibilidad" name="visibilidad">
+                        <option>Todos</option>
+                        <option>Solo músicos de VoidRiff</option>
+                        <option>Solo yo</option>
+                    </select>
+                </div>
+
+                <div class="grupo-checks">
+                    <label class="check"><input type="checkbox" name="colabora"> Busco colaboradores para esta pieza</label>
+                    <label class="check"><input type="checkbox" name="derechos" required> Confirmo que esta música es mía o tengo permiso para compartirla</label>
+                </div>
+
+                <button type="submit" class="btn">Subir música</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-contenido">
+            <div class="footer-marca">
+                <p class="footer-logo">VoidRiff</p>
+                <p>Conecta con músicos y crea música sin límites.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Explora</h4>
+                <a href="musicos.html">Músicos</a>
+                <a href="bandas.html">Bandas</a>
+                <a href="aprender.html">Aprender</a>
+                <a href="VDRF.html#contacto">Contacto</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>Crea</h4>
+                <a href="crear-banda.html">Crear banda</a>
+                <a href="subir-musica.html">Subir música</a>
+                <a href="crear-musica.html">Crear música</a>
+            </div>
+
+            <div class="footer-redes">
+                <h4>Síguenos</h4>
+                <a href="#">Instagram</a>
+                <a href="#">YouTube</a>
+                <a href="#">Spotify</a>
+            </div>
+        </div>
+
+        <p class="footer-copy">&copy; 2026 VoidRiff. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

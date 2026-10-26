@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta | VoidRiff</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <nav class="nav-principal">
+            <a href="VDRF.html" class="logo">VoidRiff</a>
+            <div class="nav-links">
+                <a href="musicos.html">Músicos</a>
+                <a href="bandas.html">Bandas</a>
+                <a href="crear-banda.html">Crear banda</a>
+                <a href="subir-musica.html">Subir música</a>
+                <a href="aprender.html">Aprender</a>
+                <a href="login.html" class="btn-nav">Entrar</a>
+            </div>
+        </nav>
+    </header>
+
+       <main>
+        <section class="encabezado-pagina">
+            <h1>Crea tu cuenta</h1>
+            <p>Únete a la comunidad, arma tu perfil y empieza a conectar con otros músicos.</p>
+        </section>
+
+        <section class="contacto">
+            <form class="form-contacto">
+
+                <div class="campo">
+                    <label for="nombre">Nombre artístico</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej: Ares" required>
+                </div>
+
+                <div class="campo">
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" required>
+                </div>
+
+                <div class="campo">
+                    <label for="clave">Contraseña</label>
+                    <input type="password" id="clave" name="clave" minlength="8" placeholder="Mínimo 8 caracteres" required>
+                </div>
+
+                <div class="campo">
+                    <label for="instrumento">Instrumento principal</label>
+                    <select id="instrumento" name="instrumento" required>
+                        <option value="">Selecciona un instrumento</option>
+                        <option>Guitarra</option>
+                        <option>Bajo</option>
+                        <option>Batería</option>
+                        <option>Voz</option>
+                        <option>Teclado</option>
+                        <option>Otro</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="ciudad">Ciudad</label>
+                    <input type="text" id="ciudad" name="ciudad" placeholder="Ej: Cali" required>
+                </div>
+
+                <div class="grupo-checks">
+                    <label class="check"><input type="checkbox" name="terminos" required> Acepto los términos y condiciones</label>
+                </div>
+
+                <button type="submit" class="btn">Crear cuenta</button>
+
+                <p class="enlaces-form">¿Ya tienes cuenta? <a href="login.html">Entra aquí</a></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-contenido">
+            <div class="footer-marca">
+                <p class="footer-logo">VoidRiff</p>
+                <p>Conecta con músicos y crea música sin límites.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Explora</h4>
+                <a href="musicos.html">Músicos</a>
+                <a href="bandas.html">Bandas</a>
+                <a href="aprender.html">Aprender</a>
+                <a href="VDRF.html#contacto">Contacto</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>Crea</h4>
+                <a href="crear-banda.html">Crear banda</a>
+                <a href="subir-musica.html">Subir música</a>
+                <a href="crear-musica.html">Crear música</a>
+            </div>
+
+            <div class="footer-redes">
+                <h4>Síguenos</h4>
+                <a href="#">Instagram</a>
+                <a href="#">YouTube</a>
+                <a href="#">Spotify</a>
+            </div>
+        </div>
+
+        <p class="footer-copy">&copy; 2026 VoidRiff. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
